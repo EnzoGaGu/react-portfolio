@@ -7,7 +7,7 @@ document.body.style.backgroundColor = "#bfcfe7";
 function App() {
     const [count, setCount] = useState(0);
 
-    let navBarOptions = ["Presentación", "Conocimientos", "Proyectos", "¡Contáctame!"];
+    let navBarOptions = ["Presentación", "Conocimientos", "Proyectos", "¡Contáctame!", "Holiwis"];
 
     const handleNavBarClick = console.log("Me gusta el pan");
 
