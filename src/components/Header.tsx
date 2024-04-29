@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/Style.css";
 
 interface Props {
     items: string[];
@@ -13,13 +14,15 @@ function Header({ items, onSelectItem }: Props) {
         items.length === 0 && <h1>No header items found</h1>;
     };
 
+    const navLinkProperties = "nav-link fw-bold fs-5 ";
+
     return (
-        <div>
+        <div className="shadow-lg mb-5 white-background">
             <header className="d-flex justify-content-center py-3">
-                <ul className="nav nav-pills">
+                <ul className="nav nav-pills flex-column flex-lg-row">
                     {items.map((item, index) => (
                         <li
-                            className="nav-item px-3"
+                            className="nav-item px-xl-5 px-3"
                             key={item}
                             onMouseEnter={() => {
                                 setSelectedIndex(index);
@@ -31,7 +34,12 @@ function Header({ items, onSelectItem }: Props) {
                                 onSelectItem(item);
                             }}
                         >
-                            <a href="#" className={selectedIndex === index ? "nav-link active" : "nav-link"} key={item} aria-current="page">
+                            <a
+                                href="#"
+                                className={selectedIndex === index ? navLinkProperties + "active background-black" : navLinkProperties + "inactive"}
+                                key={item}
+                                aria-current="page"
+                            >
                                 {item}
                             </a>
                         </li>

@@ -1,0 +1,33 @@
+
+
+
+[
+    {
+        "cathegory": "Desarrollo Web",
+        "name": "TinDog",
+        "desc": "Pequeña web realizada con Bootstrap para bootcamp de Web Development por Udemy.",
+        "link": "https://enzogagu.github.io/TinDog/",
+        "altImg": "TinDog image"
+    },
+    {
+        "cathegory": "Desarrollo de Videojuegos",
+        "name": "Project Zero",
+        "desc": "Test de movimiento para juego de plataformas 2D utilizando al personaje Zero de Megaman X, hecho en Unity.",
+        "link": "",
+        "altImg": "Project Zero"
+    },
+    {
+        "cathegory": "Programación en Python",
+        "name": "NoSQL",
+        "desc": "Proyecto final para la materia Base de Datos NoSQL de la carrera Tecnólogo en Informática. Se utilizaron MongoDB, Postman y Jenkins.",
+        "link": "https://github.com/EnzoGaGu/NoSQL",
+        "altImg": "NoSQL"
+    },
+    {
+        "cathegory": "Programación en C++",
+        "name": "Proyecto Saving",
+        "desc": "Proyecto personal aún en proceso. Pequeño programa hecho en C++ cuya funcionalidad apunta a ser un sustituto del Cloud Saving de Steam.",
+        "link": "https://github.com/EnzoGaGu/Proyecto-Saving",
+        "altImg": "Proyecto Saving"
+    }
+]

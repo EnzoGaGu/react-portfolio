@@ -1,0 +1,47 @@
+[
+    {
+        "sliderTitle": "Desarrollo Web",
+        "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "React"
+        ],
+        "barPercentage": [
+            100,
+            50,
+            25, 
+            10,
+            70
+        ]
+    },
+    {
+        "sliderTitle": "Propósito General",
+        "tech": [
+            "C/C++",
+            "Java",
+            "Python",
+            "C#",
+            "GeneXus"
+        ],
+        "barPercentage": [
+            100,
+            50,
+            25, 
+            10,
+            70
+        ]
+    },
+    {
+        "sliderTitle": "Manejo de Base de Datos",
+        "tech": [
+            "SQL",
+            "MongoDB"
+        ],
+        "barPercentage": [
+            100,
+            50
+        ]
+    }
+]

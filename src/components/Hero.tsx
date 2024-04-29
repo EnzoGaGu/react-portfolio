@@ -1,36 +1,67 @@
-function Hero() {
+import Button from "./Button";
+import "../css/Style.css";
+
+interface Props {
+    name: string;
+    title: string;
+    buttonText: string;
+    buttonLink: string;
+    imgLink: string;
+    text: string;
+}
+
+function Hero({ name, title, buttonText, imgLink, buttonLink, text }: Props) {
+    const onButtonClick = () => {
+        const link = document.createElement("a");
+        link.href = buttonLink;
+        link.download = "Curriculum Vitae.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
-        <div>
-            <div className="container col-xxl-8 px-4 py-5">
-                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div className="col-10 col-sm-8 col-lg-6">
-                        <img
-                            src="bootstrap-themes.png"
-                            className="d-block mx-lg-auto img-fluid"
-                            alt="Bootstrap Themes"
-                            width="700"
-                            height="500"
-                            loading="lazy"
-                        ></img>
+        <>
+            <div className="container my-5 px-0">
+                <div className="d-sm-flex justify-content-center white-background gap-md-5 gap-xxl-0 row p-5 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg white-background">
+                    <div className="col-lg-7 p-xxl-5 p-0 pt-lg-3">
+                        <div className="lc-block mb-3">
+                            <div>
+                                <h1 className="fw-bold display-1 text-center text-lg-start">
+                                    {name}
+                                    <p></p>
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div className="lc-block mb-3">
+                            <div>
+                                <p className="h2 display-5 text-center text-lg-start">{title}</p>
+                            </div>
+                        </div>
+
+                        <div className="lc-block d-grid gap-3 d-md-flex my-5 justify-content-md-center justify-content-lg-start">
+                            <Button color="dark" onButtonClick={onButtonClick}>
+                                {buttonText}
+                            </Button>
+                        </div>
                     </div>
-                    <div className="col-lg-6">
-                        <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                        <p className="lead">
-                            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit,
-                            featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
-                        </p>
-                        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
-                                Primary
-                            </button>
-                            <button type="button" className="btn btn-outline-secondary btn-lg px-4">
-                                Default
-                            </button>
+                    <div className="col-lg-4 col-8 offset-lg-1 p-0 mb-5 m-xxl-5 m-md-3 mb-md-5 mb-lg-3 mx-md-0 overflow-hidden rounded-5 shadow-lg">
+                        <div className="lc-block white-background">
+                            <img className="w-100" src={imgLink} alt="Profile Picture" width="720px" />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div className="container my-5 px-0">
+                <div className="d-sm-flex justify-content-center white-background gap-md-5 gap-xxl-0 row p-5 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg">
+                    <div className="col-lg-10 p-lg-5 text-center p-0 pb-5">
+                        <p className="mb-0 fs-4">{text}</p>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

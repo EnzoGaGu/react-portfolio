@@ -1,0 +1,37 @@
+.white-background {
+    background-color: #f8edff;
+}
+
+.background-black {
+    background-color: #3d3b40 !important;
+}
+
+.inactive {
+    color: #3d3b40 !important;
+}
+
+.nav-link {
+    font-weight: bolder;
+}
+
+.list-image {
+    background-color: #f06529; 
+    width: 50px; 
+    height: 50px;
+}
+
+
+.button-background {
+    background-color: #f8edff !important; 
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+
+.footer-style{
+    background-color: #2dba4e; 
+    width: 55px; 
+    height: 55px;
+}
