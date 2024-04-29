@@ -14,6 +14,7 @@ import HeaderData from "./Data/Header.json";
 import HeroData from "./Data/Hero.json";
 import ProjectSectionD from "./Data/ProjectSection.json";
 import CarouselData from "./Data/CarouselData.json";
+import FooterData from "./Data/FooterData.json";
 
 document.body.style.backgroundColor = "#bfcfe7";
 
@@ -29,8 +30,6 @@ function App() {
 
     const handleNavBarClick = console.log("Yo puedo hacerlo");
 
-    const contacts = ["GitHub", "LinkedIn", "GMail"];
-    const contactLinks = ["", "", ""];
     const lastPhrase = "¡Gracias!";
     const imgLink = ["", "", ""];
 
@@ -51,7 +50,12 @@ function App() {
 
             <ProjectSection cathegories={pCath} names={names} descs={descs} links={links} imgs={imgs} altImgs={altImgs} />
 
-            <Footer contact={contacts} link={contactLinks} lastPhrase={lastPhrase} imgLink={imgLink} />
+            <Footer
+                contact={FooterData.map((item) => item.contact)}
+                link={FooterData.map((item) => item.contactLink)}
+                lastPhrase={lastPhrase}
+                imgLink={FooterData.map((item) => item.imgLink)}
+            />
         </div>
     );
 }
