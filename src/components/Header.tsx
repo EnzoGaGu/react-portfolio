@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../css/Style.css";
 
 interface Props {
@@ -9,10 +9,6 @@ interface Props {
 
 function Header({ items, onSelectItem }: Props) {
     const [selectedIndex, setSelectedIndex] = useState(-1);
-
-    const message = () => {
-        items.length === 0 && <h1>No header items found</h1>;
-    };
 
     const navLinkProperties = "nav-link fw-bold fs-5 ";
 

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ProjectView from "./ProjectView";
 
 interface Props {

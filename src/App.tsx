@@ -18,12 +18,6 @@ import CarouselData from "./Data/CarouselData.json";
 document.body.style.backgroundColor = "#bfcfe7";
 
 function App() {
-    const listOfBars = [
-        [100, 50, 25, 10, 70],
-        [1, 1, 1, 1, 1],
-        [1, 1],
-    ];
-
     const cathegories: string[] = HeaderData.map((item) => item.option);
 
     const pCath = ProjectSectionD.map((item) => item.cathegory);
