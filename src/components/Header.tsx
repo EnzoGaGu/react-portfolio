@@ -13,9 +13,9 @@ function Header({ items, onSelectItem }: Props) {
     const navLinkProperties = "nav-link fw-bold fs-5 ";
 
     return (
-        <div className="shadow-lg mb-5 white-background">
+        <div className="shadow-lg mb-5 white-background col-12">
             <header className="d-flex justify-content-center py-3">
-                <ul className="nav nav-pills flex-column flex-lg-row">
+                <ul className="nav nav-pills flex-column align-items-center flex-lg-row">
                     {items.map((item, index) => (
                         <li
                             className="nav-item px-xl-5 px-3"

@@ -31,10 +31,10 @@ function App() {
     const handleNavBarClick = console.log("Yo puedo hacerlo");
 
     const lastPhrase = "¡Gracias!";
-    const imgLink = ["", "", ""];
+    const imgLink = [import.meta.env.BASE_URL + "/github-mark-white.svg", import.meta.env.BASE_URL + "/linkedin.svg", import.meta.env.BASE_URL + "/gmail.svg"];
 
     return (
-        <div>
+        <div className="container-fluid p-0">
             <Header items={cathegories} onSelectItem={() => handleNavBarClick} />
             <Hero name={HeroData.name} title={HeroData.title} buttonText={HeroData.buttonText} imgLink={Profile} buttonLink={CV} text={HeroData.text} />
 
@@ -54,7 +54,7 @@ function App() {
                 contact={FooterData.map((item) => item.contact)}
                 link={FooterData.map((item) => item.contactLink)}
                 lastPhrase={lastPhrase}
-                imgLink={FooterData.map((item) => item.imgLink)}
+                imgLink={imgLink}
             />
         </div>
     );

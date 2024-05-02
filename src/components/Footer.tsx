@@ -20,7 +20,7 @@ function Footer({ contact, link, lastPhrase, imgLink }: Props) {
                                 <a href={link[index]} className="d-lg-inline-flex flex-lg-row d-flex flex-column align-items-center justify-content-center">
                                     <span className="d-inline-flex align-items-center justify-content-center text-white rounded-circle m-1 me-2 footer-style">
                                         <div>
-                                            <img src={imgLink[index]}></img>
+                                            <img src={imgLink[index]} className="footer-img"></img>
                                         </div>
                                     </span>
                                     {cont}

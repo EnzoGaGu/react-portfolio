@@ -31,7 +31,12 @@
 
 
 .footer-style{
-    background-color: #2dba4e; 
+    background-color: #3d3b40; 
     width: 55px; 
     height: 55px;
+}
+
+.footer-img{
+    width: 30px;
+    height: 30px;
 }
