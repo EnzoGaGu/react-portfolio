@@ -15,11 +15,14 @@ import HeroData from "./Data/Hero.json";
 import ProjectSectionD from "./Data/ProjectSection.json";
 import CarouselData from "./Data/CarouselData.json";
 import FooterData from "./Data/FooterData.json";
+import { useRef } from "react";
 
 document.body.style.backgroundColor = "#bfcfe7";
 
 function App() {
     const cathegories: string[] = HeaderData.map((item) => item.option);
+
+    const conocimientosRef = useRef<HTMLDivElement>(null);
 
     const pCath = ProjectSectionD.map((item) => item.cathegory);
     const names = ProjectSectionD.map((item) => item.name);
@@ -38,7 +41,9 @@ function App() {
             <Header items={cathegories} onSelectItem={() => handleNavBarClick} />
             <Hero name={HeroData.name} title={HeroData.title} buttonText={HeroData.buttonText} imgLink={Profile} buttonLink={CV} text={HeroData.text} />
 
-            <Title>Conocimientos</Title>
+            <div id="Conocimientos">
+                <Title>Conocimientos</Title>
+            </div>
 
             <Carousel
                 listItemsList={CarouselData.map((item) => item.tech)}
@@ -46,16 +51,20 @@ function App() {
                 sliderTitles={CarouselData.map((item) => item.sliderTitle)}
             />
 
-            <Title>Proyectos</Title>
+            <div id="Proyectos">
+                <Title>Proyectos</Title>
+            </div>
 
             <ProjectSection cathegories={pCath} names={names} descs={descs} links={links} imgs={imgs} altImgs={altImgs} />
 
-            <Footer
-                contact={FooterData.map((item) => item.contact)}
-                link={FooterData.map((item) => item.contactLink)}
-                lastPhrase={lastPhrase}
-                imgLink={imgLink}
-            />
+            <div id="¡Contáctame!">
+                <Footer
+                    contact={FooterData.map((item) => item.contact)}
+                    link={FooterData.map((item) => item.contactLink)}
+                    lastPhrase={lastPhrase}
+                    imgLink={imgLink}
+                />
+            </div>
         </div>
     );
 }

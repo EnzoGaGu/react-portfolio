@@ -12,7 +12,7 @@ function Carousel({ listItemsList, listProgressList, sliderTitles }: Props) {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     function sumIndex() {
-        if (selectedIndex > 1) {
+        if (selectedIndex > sliderTitles.length - 2) {
             setSelectedIndex(0);
         } else {
             var numb: number = selectedIndex + 1;
@@ -22,7 +22,7 @@ function Carousel({ listItemsList, listProgressList, sliderTitles }: Props) {
 
     function restIndex() {
         if (selectedIndex < 1) {
-            setSelectedIndex(2);
+            setSelectedIndex(sliderTitles.length - 1);
         } else {
             var numb: number = selectedIndex - 1;
             setSelectedIndex(numb);

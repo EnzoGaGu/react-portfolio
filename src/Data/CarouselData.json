@@ -2,17 +2,15 @@
     {
         "sliderTitle": "Desarrollo Web",
         "tech": [
-            "HTML",
-            "CSS",
+            "HTML/CSS",
             "JavaScript",
             "Bootstrap",
             "React"
         ],
         "barPercentage": [
             100,
-            50,
-            25, 
-            10,
+            60, 
+            70,
             70
         ]
     },
@@ -20,17 +18,17 @@
         "sliderTitle": "Propósito General",
         "tech": [
             "C/C++",
-            "Java",
-            "Python",
+            "Java/Spring Boot",
+            "Python/Django",
             "C#",
             "GeneXus"
         ],
         "barPercentage": [
             100,
+            70,
+            70, 
             50,
-            25, 
-            10,
-            70
+            60
         ]
     },
     {
@@ -42,6 +40,15 @@
         "barPercentage": [
             100,
             50
+        ]
+    },
+    {
+        "sliderTitle": "Desarrollo Mobile",
+        "tech": [
+            "Android Studio/Kotlin"
+        ],
+        "barPercentage": [
+            60
         ]
     }
 ]
