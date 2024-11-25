@@ -44,6 +44,9 @@ function Hero({ name, title, buttonText, imgLink, buttonLink, text }: Props) {
                             <Button color="dark" onButtonClick={onButtonClick}>
                                 {buttonText}
                             </Button>
+                            <Button color="dark" onButtonClick={onButtonClick}>
+                                {buttonText}
+                            </Button>
                         </div>
                     </div>
                     <div className="col-lg-4 col-8 offset-lg-1 p-0 mb-5 m-xxl-5 m-md-3 mb-md-5 mb-lg-3 mx-md-0 overflow-hidden rounded-5 shadow-lg">
