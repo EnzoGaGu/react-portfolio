@@ -15,14 +15,14 @@ import HeroData from "./Data/Hero.json";
 import ProjectSectionD from "./Data/ProjectSection.json";
 import CarouselData from "./Data/CarouselData.json";
 import FooterData from "./Data/FooterData.json";
-import { useRef } from "react";
+//import { useRef } from "react";
 
-document.body.style.backgroundColor = "#bfcfe7";
+document.body.style.backgroundColor = "#393E46";
 
 function App() {
     const cathegories: string[] = HeaderData.map((item) => item.option);
 
-    const conocimientosRef = useRef<HTMLDivElement>(null);
+    //const conocimientosRef = useRef<HTMLDivElement>(null);
 
     const pCath = ProjectSectionD.map((item) => item.cathegory);
     const names = ProjectSectionD.map((item) => item.name);
@@ -39,7 +39,15 @@ function App() {
     return (
         <div className="container-fluid p-0">
             <Header items={cathegories} onSelectItem={() => handleNavBarClick} />
-            <Hero name={HeroData.name} title={HeroData.title} buttonText={HeroData.buttonText} imgLink={Profile} buttonLink={CV} text={HeroData.text} />
+            <Hero
+                name={HeroData.name}
+                title={HeroData.title}
+                buttonText={HeroData.buttonText}
+                buttonTextEng={HeroData.buttonTextEng}
+                imgLink={Profile}
+                buttonLink={CV}
+                text={HeroData.text}
+            />
 
             <div id="Conocimientos">
                 <Title>Conocimientos</Title>

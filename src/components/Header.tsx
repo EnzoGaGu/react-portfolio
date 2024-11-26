@@ -17,7 +17,7 @@ function Header({ items, onSelectItem /*checkHandle = false*/ }: Props) {
 
     //const response = () => console.log("Hello");
 
-    const handleNavClick = (item: string, index: number) => {
+    const handleNavClick = (item: string) => {
         // Desplazamiento suave a la sección correspondiente
         onSelectItem(item);
 
@@ -40,7 +40,7 @@ function Header({ items, onSelectItem /*checkHandle = false*/ }: Props) {
                             onMouseLeave={() => {
                                 setSelectedIndex(-1);
                             }}
-                            onClick={() => handleNavClick(item, index)}
+                            onClick={() => handleNavClick(item)}
                         >
                             <a
                                 href={"#" + item}

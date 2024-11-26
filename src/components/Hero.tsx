@@ -5,12 +5,13 @@ interface Props {
     name: string;
     title: string;
     buttonText: string;
+    buttonTextEng: string;
     buttonLink: string;
     imgLink: string;
     text: string;
 }
 
-function Hero({ name, title, buttonText, imgLink, buttonLink, text }: Props) {
+function Hero({ name, title, buttonText, buttonTextEng, imgLink, buttonLink, text }: Props) {
     const onButtonClick = () => {
         const link = document.createElement("a");
         link.href = buttonLink;
@@ -45,7 +46,7 @@ function Hero({ name, title, buttonText, imgLink, buttonLink, text }: Props) {
                                 {buttonText}
                             </Button>
                             <Button color="dark" onButtonClick={onButtonClick}>
-                                {buttonText}
+                                {buttonTextEng}
                             </Button>
                         </div>
                     </div>

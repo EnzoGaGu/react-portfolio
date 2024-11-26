@@ -8,12 +8,11 @@ interface Props {
     isActivated: boolean;
 }
 
-function Switch({ leftTag, rightTag, isActivated }: Props) {
+function Switch({ leftTag, rightTag }: Props) {
     const [isChecked, setIsChecked] = useState(false);
 
     const checkHandle = () => {
         setIsChecked(!isChecked);
-        isActivated = isChecked;
     };
 
     return (
