@@ -7,14 +7,20 @@ interface Props {
     buttonText: string;
     buttonTextEng: string;
     buttonLink: string;
+    buttonLinkEng: string;
     imgLink: string;
     text: string;
 }
 
-function Hero({ name, title, buttonText, buttonTextEng, imgLink, buttonLink, text }: Props) {
-    const onButtonClick = () => {
+function Hero({ name, title, buttonText, buttonTextEng, imgLink, buttonLink, buttonLinkEng, text }: Props) {
+    const onButtonClick = (lang: boolean) => {
         const link = document.createElement("a");
-        link.href = buttonLink;
+        if (lang) {
+            link.href = buttonLink;
+        } else {
+            link.href = buttonLinkEng;
+        }
+
         link.download = "Curriculum Vitae.pdf";
         document.body.appendChild(link);
         link.click();
@@ -42,10 +48,10 @@ function Hero({ name, title, buttonText, buttonTextEng, imgLink, buttonLink, tex
                         </div>
 
                         <div className="lc-block d-grid gap-3 d-md-flex my-5 justify-content-md-center justify-content-lg-start">
-                            <Button color="dark" onButtonClick={onButtonClick}>
+                            <Button color="dark" onButtonClick={() => onButtonClick(true)}>
                                 {buttonText}
                             </Button>
-                            <Button color="dark" onButtonClick={onButtonClick}>
+                            <Button color="dark" onButtonClick={() => onButtonClick(false)}>
                                 {buttonTextEng}
                             </Button>
                         </div>

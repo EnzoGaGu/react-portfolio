@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Profile from "./assets/profile.jpg";
 import CV from "./assets/CV.pdf";
+import CVE from "./assets/CVE.pdf";
 import Title from "./components/Title";
 import Carousel from "./components/Carousel";
 import ProjectSection from "./components/ProjectSection";
@@ -46,6 +47,7 @@ function App() {
                 buttonTextEng={HeroData.buttonTextEng}
                 imgLink={Profile}
                 buttonLink={CV}
+                buttonLinkEng={CVE}
                 text={HeroData.text}
             />
 
