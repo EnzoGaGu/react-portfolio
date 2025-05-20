@@ -1,0 +1,49 @@
+{
+    "header": [
+        {
+            "option": "Presentación",
+            "link": "#"
+        },
+        {
+            "option": "Conocimientos"
+        },
+        {
+            "option": "Proyectos"
+        },
+        {
+            "option": "¡Contáctame!"
+        }  
+    ],
+    "hero": 
+        {
+            "name": "Enzo Gularte",
+            "title": "Tecnólogo en Informática",
+            "buttonText": "Descargar currículum",
+            "text": "Poseo una alta capacidad para manejarme dentro del sector, así como para adecuarme a equipos de trabajo y ambientes laborales diversos. Además, tengo amplios conocimientos en las diferentes herramientas necesarias para realizar un trabajo óptimo. Me especializo en el desarrollo de aplicaciones web y tengo experiencia en el desarrollo backend. Siempre estoy buscando nuevos desafíos que me ayuden a mejorar mis habilidades. Me considero una persona responsable, comprometida y con muchas ganas de seguir creciendo profesionalmente."
+        }
+    ,
+    "projects": [
+        { "link": "https://api.github.com/repos/EnzoGaGu/SurvivalGame" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/stud.yuy-backend" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/react-portfolio" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/Proyecto-Saving" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/TinDog" }
+    ],
+    "footer":[
+        {
+            "contact":"GitHub",
+            "contactLink":"https://github.com/EnzoGaGu",
+            "imgLink":""
+        },
+        {
+            "contact":"LinkedIn",
+            "contactLink":"https://www.linkedin.com/in/enzo-gularte-rodriguez/",
+            "imgLink":""
+        },
+        {
+            "contact":"GMail",
+            "contactLink":"mailto:enzogagu@gmail.com",
+            "imgLink":""
+        }
+    ]
+}

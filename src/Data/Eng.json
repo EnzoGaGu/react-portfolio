@@ -1,0 +1,47 @@
+{
+    "header": [
+        {
+            "option": "Presentación",
+            "link": "#"
+        },
+        {
+            "option": "Conocimientos"
+        },
+        {
+            "option": "Proyectos"
+        },
+        {
+            "option": "¡Contáctame!"
+        }  
+    ],
+    "hero": [
+        {
+            "name": "Enzo Gularte",
+            "title": "Tecnólogo en Informática",
+            "buttonText": "Descargar currículum",
+            "text": "Estudiante de último semestre de Tecnólogo en Informática. Alta capacidad para manejarse dentro del sector, así como para adecuarse a equipos de trabajo y ambientes laborales diversos. Amplios conocimientos en Java y C++."
+        }
+    ],
+    "projects": [
+        { "link": "https://api.github.com/repos/EnzoGaGu/SurvivalGame" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/react-portfolio" },
+        { "link": "https://api.github.com/repos/EnzoGaGu/Proyecto-Saving" }
+    ],
+    "footer":[
+        {
+            "contact":"GitHub",
+            "contactLink":"https://github.com/EnzoGaGu",
+            "imgLink":""
+        },
+        {
+            "contact":"LinkedIn",
+            "contactLink":"https://www.linkedin.com/in/enzo-gularte-rodriguez/",
+            "imgLink":""
+        },
+        {
+            "contact":"GMail",
+            "contactLink":"mailto:enzogagu@gmail.com",
+            "imgLink":""
+        }
+    ]
+}
